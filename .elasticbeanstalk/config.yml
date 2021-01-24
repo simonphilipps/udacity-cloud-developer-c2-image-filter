@@ -1,6 +1,6 @@
 branch-defaults:
   default:
-    environment: null
+    environment: udacity-cloud-developer-c2-image-filter
     group_suffix: null
 global:
   application_name: udacity-cloud-developer-c2-image-filter
