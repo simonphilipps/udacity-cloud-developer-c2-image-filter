@@ -2,14 +2,14 @@ branch-defaults:
   default:
     environment: udacity-cloud-developer-c2-image-filter
     group_suffix: null
+deploy:
+  artifact: ./www/Archive.zip
 global:
   application_name: udacity-cloud-developer-c2-image-filter
   branch: null
   default_ec2_keyname: null
   default_platform: Node.js 12 running on 64bit Amazon Linux 2
   default_region: eu-central-1
-  deploy:
-    artifact: ./www/Archive.zip
   include_git_submodules: true
   instance_profile: null
   platform_name: null
