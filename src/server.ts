@@ -18,7 +18,7 @@ import {filterImageFromURL, deleteLocalFiles} from './util/util';
   //     - Download, filter and save the filtered image locally.
   //     - Send back the filtered image to the caller.
   //     - Clear the local filtered image.
-  app.get("/filteredimage", async (req, res) => {
+  app.get("/filteredimage", async (req:express.Request, res:express.Response) => {
     if (!req.query.image_url) {
       res.status(400).send("Invalid request. The image_url query parameter is missing.");
     }
@@ -37,7 +37,7 @@ import {filterImageFromURL, deleteLocalFiles} from './util/util';
   
   // Root Endpoint
   // Displays a simple message to the user
-  app.get( "/", async ( req, res ) => {
+  app.get( "/", async ( req:express.Request, res:express.Response ) => {
     res.send("try GET /filteredimage?image_url={{}}")
   } );
   
